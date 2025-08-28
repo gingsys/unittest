@@ -1,0 +1,94 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+pool:
+  name: agent-prod
+
+variables:
+ - group: ProdVariables
+ - name: solution
+   value: '**/*.sln'
+ - name: buildPlatform
+   value: 'Any CPU'
+ - name: buildConfiguration
+   value: 'Release'
+
+jobs:
+  - job: manual_approval
+    displayName: "Aprobación Manual"
+    pool: server
+    steps:
+      - task: ManualValidation@1
+        displayName: "Esperando aprobación inicial"
+        inputs:
+          notifyUsers: '$(approvers)'
+          instructions: "Revisar y aprobar la ejecución del pipeline del ambiente Test."
+          approvers: '$(approvers)'
+          allowApproversToApproveTheirOwnRuns: true
+  
+  - job: application_deploy
+    displayName: "Despliegue de Aplicación"
+    dependsOn: manual_approval
+    condition: succeeded()
+    steps:
+      - task: NuGetToolInstaller@1
+        displayName: "Instalando herramienta Nuget"
+
+      - task: NuGetCommand@2
+        displayName: "Restaurando NuGet"
+        inputs:
+          restoreSolution: '$(solution)'
+  
+      - task: NodeTool@0
+        displayName: "Verificando Node v20.12.2"
+        inputs:
+          versionSpec: "20.12.2"
+
+      - task: Npm@1
+        displayName: "Instalando Dependencias de Node"
+        inputs:
+          command: install
+          workingDir: '$(System.DefaultWorkingDirectory)/SisConAxs'
+
+      - task: MSBuild@1
+        displayName: "Generando publicado"
+        inputs:
+          solution: '**/SisConAxs.sln'
+          msbuildArguments: >
+            /p:Configuration=Release
+            /p:ExcludeProjectsFromBuild="SisConAxs.Reports\\SisConAxsReports\\SisConAxsReports.rptproj"
+            /p:DeployOnBuild=true
+            /p:WebPublishMethod=Package
+            /p:PackageAsSingleFile=true
+            /p:SkipInvalidConfigurations=true
+            /p:DesktopBuildPackageLocation="$(Build.ArtifactStagingDirectory)\WebApp.zip"
+            /p:DeployIisAppPath="Default Web Site"
+          platform: 'Any CPU'
+          configuration: 'Release'
+          
+      - task: ExtractFiles@1
+        displayName: "Extrayendo archivo WebApp.zip"
+        inputs:
+          archiveFilePatterns: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+          destinationFolder: '$(Build.ArtifactStagingDirectory)/Extracted'
+          cleanDestinationFolder: true
+          
+      - task: FileTransform@2
+        displayName: "Sustituir variables en web.config"
+        inputs:
+          folderPath: '$(Build.ArtifactStagingDirectory)/$(agentFolder)'
+          enableXmlTransform: false
+          xmlTargetFiles: '**/web.config'
+
+      - task: CopyFiles@2
+        displayName: "Publicando en Servidor"
+        inputs:
+          SourceFolder: '$(Build.ArtifactStagingDirectory)/$(agentFolder)'
+          Contents: '**/*'
+          TargetFolder: '$(publishFolder)'
+          OverWrite: true

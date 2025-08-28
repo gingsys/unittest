@@ -1,0 +1,26 @@
+export const Constants = {
+    get CATEGORY_ACCESOS_BASICOS() { return 190; },
+    get CATEGORY_EQUIPOS_INFORMATICOS() { return 191; },
+    get CATEGORY_OTROS_ACCESOS() { return 192; },
+    get CATEGORY_ORACLE_ERP() { return 193; },
+    get CATEGORY_SISTEMAS_INFORMACION_ALTAS_USUARIOS() { return 194; },
+    get CATEGORY_CONTABILIDAD() { return 195; },
+    get CATEGORY_HYPERION() { return 196; },
+    get CATEGORY_OBIEE() { return 197; },
+    get CATEGORY_SERVIDOR_ARCHIVOS_OFICINA_PRINCIPAL() { return 198; },
+    get CATEGORY_SERVIDOR_ARCHIVOS_PROYECTOS() { return 199; },
+    get CATEGORY_BIBLIOTECAS_SHAREPOINT() { return 200; },
+    get CATEGORY_SAP() { return 201; },
+    get CATEGORY_REPOSITORIO_INFORMACION() { return 202; },
+    get CATEGORY_SERVIDOR_ARCHIVO_HISTORICO() { return 203; },
+
+    get CV_SET_NOMBRE_TIPO_DOCUMENTO() { return 'TIPO_DOCUMENTO'; },
+    get CV_SET_NOMBRE_TIPO_SOLICITUD() { return 'TIPO_SOLICITUD'; },
+    get CV_SET_NOMBRE_PRIORIDAD_SOLICITUD() { return 'PRIORIDAD_SOLICITUD'; },
+    get CV_SET_NOMBRE_AREAS() { return 'AREAS'; },
+    get CV_SET_NOMBRE_PROYECTOS() { return 'PROYECTOS%20COLABORADORES'; },
+    get CV_SET_NOMBRE_CARGOS() { return 'POSICIONES'; },
+    get CV_SET_NOMBRE_PAISES() { return 'PAISES'; },
+    get CV_SET_NOMBRE_TIPO_CLASIFICACION() { return 'TIPO_CLASIFICACIONES'; },
+    get CV_SET_NOMBRE_TIPO_EMPLEADO() { return 'TIPO_EMPLEADO'; }
+}

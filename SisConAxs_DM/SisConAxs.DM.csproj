@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1302CE0-7A09-4B9B-9507-4FD05D5944A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SisConAxs_DM</RootNamespace>
+    <AssemblyName>SisConAxs_DM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.10.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.10\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=4.1.4.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.4.1.4\lib\net40\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.15.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.2.15.0\lib\net48\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Client.Policy, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.Office.Client.Policy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Client.TranslationServices, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.Office.Client.TranslationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.SharePoint.Tools, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.Office.SharePoint.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.SharePoint.Client.Tenant, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.Online.SharePoint.Client.Tenant.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ProjectServer.Client, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.ProjectServer.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.DocumentManagement, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.DocumentManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Publishing, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime.Windows, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.Runtime.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Search, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Search.Applications, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.Search.Applications.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Taxonomy, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.UserProfiles, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.UserProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.WorkflowServices, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SharePointOnline.CSOM.16.1.19404.12000\lib\net45\Microsoft.SharePoint.Client.WorkflowServices.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=2.15.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.2.15.0\lib\net48\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AccessRequestApproveDetailsDTO.cs" />
+    <Compile Include="DTO\AccessRequestDetailHistoryDTO.cs" />
+    <Compile Include="DTO\AccessRequestDetailsDTO.cs" />
+    <Compile Include="DTO\AccessRequestDTO.cs" />
+    <Compile Include="DTO\AccessResourceParameterDTO.cs" />
+    <Compile Include="DTO\AccessResourcesDTO.cs" />
+    <Compile Include="DTO\AccessTypesDTO.cs" />
+    <Compile Include="DTO\AccessTypeValuesDTO.cs" />
+    <Compile Include="DTO\AccessUserDTO.cs" />
+    <Compile Include="DTO\AuthenticationDataDTO.cs" />
+    <Compile Include="DTO\CalendarDTO.cs" />
+    <Compile Include="DTO\CommonValuesDTO.cs" />
+    <Compile Include="DTO\CommonValueSetsDTO.cs" />
+    <Compile Include="DTO\CompanyDTO.cs" />
+    <Compile Include="DTO\CompanyParameterDTO.cs" />
+    <Compile Include="DTO\Constants.cs" />
+    <Compile Include="DTO\EmpleadoSincronizacionDTO.cs" />
+    <Compile Include="DTO\Filters\AccessTypeFilter.cs" />
+    <Compile Include="DTO\Filters\RequestTemplateFilter.cs" />
+    <Compile Include="DTO\Filters\ResourceCategoryFilter.cs" />
+    <Compile Include="DTO\Filters\CompanyFilter.cs" />
+    <Compile Include="DTO\Filters\PeopleFilter.cs" />
+    <Compile Include="DTO\Filters\WfHierarchyFilter.cs" />
+    <Compile Include="DTO\IntegrationOracleLogDTO.cs" />
+    <Compile Include="DTO\IntegrationAADLogDTO.cs" />
+    <Compile Include="DTO\IntegrationSAPLogDTO.cs" />
+    <Compile Include="DTO\MetadataDTO.cs" />
+    <Compile Include="DTO\RequestTemplateDetailDTO.cs" />
+    <Compile Include="DTO\RequestTemplateDTO.cs" />
+    <Compile Include="DTO\ResourcePeopleDTO.cs" />
+    <Compile Include="DTO\Response\ErrorResponse.cs" />
+    <Compile Include="DTO\Response\PaginationResponse.cs" />
+    <Compile Include="DTO\Response\ReportResponse.cs" />
+    <Compile Include="DTO\SessionDTO.cs" />
+    <Compile Include="DTO\WorkflowItemNextItemsDTO.cs" />
+    <Compile Include="DTO\NotifConfigDTO.cs" />
+    <Compile Include="DTO\SystemConfigDTO.cs" />
+    <Compile Include="DTO\PeopleDTO.cs" />
+    <Compile Include="DTO\ResourceCategoriesDTO.cs" />
+    <Compile Include="DTO\WorkflowHierarchyMembersDTO.cs" />
+    <Compile Include="DTO\WorkflowItemsDTO.cs" />
+    <Compile Include="DTO\WorkflowApproveHierarchyDTO.cs" />
+    <Compile Include="DTO\WorkflowDTO.cs" />
+    <Compile Include="Models\ACCESS_REQUEST_DETAILS.cs" />
+    <Compile Include="Models\ACCESS_RESOURCES.cs" />
+    <Compile Include="Models\ACCESS_REQUESTS.cs" />
+    <Compile Include="Models\ACCESS_RESOURCE_PARAMETERS.cs" />
+    <Compile Include="Models\ACCESS_TYPES.cs" />
+    <Compile Include="Models\ACCESS_TYPE_VALUES.cs" />
+    <Compile Include="Models\ACCESS_USERS.cs" />
+    <Compile Include="Models\CALENDAR.cs" />
+    <Compile Include="Models\COMMON_VALUES.cs" />
+    <Compile Include="Models\COMMON_VALUE_SETS.cs" />
+    <Compile Include="Models\COMPANY.cs" />
+    <Compile Include="Models\COMPANY_PARAMETERS.cs" />
+    <Compile Include="Models\INTEGRATION_ORACLE_LOG.cs" />
+    <Compile Include="Models\INTEGRATION_AAD_LOG.cs" />
+    <Compile Include="Models\INTEGRATION_SAP_LOG.cs" />
+    <Compile Include="Models\Mapping\ACCESS_REQUEST_DETAILSMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_RESOURCESMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_REQUESTSMap.cs" />
+    <Compile Include="Models\Mapping\COMPANY_PARAMETERSMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_RESOURCE_PARAMETERSMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_TYPESMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_TYPE_VALUESMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_USERSMap.cs" />
+    <Compile Include="Models\Mapping\CALENDARMap.cs" />
+    <Compile Include="Models\Mapping\ACCESS_USER_COMPANIESMap.cs" />
+    <Compile Include="Models\Mapping\COMMON_VALUESMap.cs" />
+    <Compile Include="Models\Mapping\COMMON_VALUE_SETSMap.cs" />
+    <Compile Include="Models\Mapping\COMPANYMap.cs" />
+    <Compile Include="Models\Mapping\INTEGRATION_ORACLE_LOGMap.cs" />
+    <Compile Include="Models\Mapping\INTEGRATION_AAD_LOGMap.cs" />
+    <Compile Include="Models\Mapping\INTEGRATION_SAP_LOGMap.cs" />
+    <Compile Include="Models\Mapping\METADATAMap.cs" />
+    <Compile Include="Models\Mapping\PEOPLEMap.cs" />
+    <Compile Include="Models\Mapping\REQUEST_TEMPLATEMap.cs" />
+    <Compile Include="Models\Mapping\REQUEST_TEMPLATE_DETAILSMap.cs" />
+    <Compile Include="Models\Mapping\RESOURCE_CATEGORIESMap.cs" />
+    <Compile Include="Models\Mapping\RESOURCE_PEOPLEMap.cs" />
+    <Compile Include="Models\Mapping\RESOURCE_PEOPLE_LOGMap.cs" />
+    <Compile Include="Models\Mapping\SYSTEM_CONFIGMap.cs" />
+    <Compile Include="Models\Mapping\SYSTEM_LOGMap.cs" />
+    <Compile Include="Models\Mapping\USER_OBJECT_ACCESSMap.cs" />
+    <Compile Include="Models\Mapping\WF_EXECUTION_PARAMETERSMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOWMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOW_EXECUTION_HISTORYMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOW_HIERARCHY_MEMBERSMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOW_EXECUTIONMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOW_APPROVE_HIERARCHYMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOW_ITEMSMap.cs" />
+    <Compile Include="Models\Mapping\WORKFLOW_ITEM_NEXTMap.cs" />
+    <Compile Include="Models\METADATA.cs" />
+    <Compile Include="Models\PEOPLE.cs" />
+    <Compile Include="Models\REQUEST_TEMPLATE.cs" />
+    <Compile Include="Models\REQUEST_TEMPLATE_DETAIL.cs" />
+    <Compile Include="Models\RESOURCE_CATEGORIES.cs" />
+    <Compile Include="Models\RESOURCE_PEOPLE.cs" />
+    <Compile Include="Models\RESOURCE_PEOPLE_LOG.cs" />
+    <Compile Include="Models\SisConAxsContext.cs" />
+    <Compile Include="Models\SYSTEM_CONFIG.cs" />
+    <Compile Include="Models\SYSTEM_LOG.cs" />
+    <Compile Include="Models\USER_OBJECT_ACCESS.cs" />
+    <Compile Include="Models\WF_EXECUTION_PARAMETERS.cs" />
+    <Compile Include="Models\WORKFLOW_EXECUTION_HISTORY.cs" />
+    <Compile Include="Models\WORKFLOW_HIERARCHY_MEMBERS.cs" />
+    <Compile Include="Models\WORKFLOW_APPROVE_HIERARCHY.cs" />
+    <Compile Include="Models\WORKFLOW.cs" />
+    <Compile Include="Models\WORKFLOW_EXECUTION.cs" />
+    <Compile Include="Models\WORKFLOW_ITEMS.cs" />
+    <Compile Include="Models\WORKFLOW_ITEM_NEXT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AccessResourcesRepository.cs" />
+    <Compile Include="Repository\AccessRequestRepository.cs" />
+    <Compile Include="Repository\AccessUsersRepository.cs" />
+    <Compile Include="Repository\CalendarRepository.cs" />
+    <Compile Include="Repository\CompanyRepository.cs" />
+    <Compile Include="Repository\IntegrationOracleLogRepository.cs" />
+    <Compile Include="Repository\IntegrationAADLogRepository.cs" />
+    <Compile Include="Repository\IntegrationSAPLogRepository.cs" />
+    <Compile Include="Repository\MetadataRepository.cs" />
+    <Compile Include="Repository\ModelExceptionDetails.cs" />
+    <Compile Include="Repository\RequestTemplateRepository.cs" />
+    <Compile Include="Repository\ResourcePeopleRepository.cs" />
+    <Compile Include="Repository\SystemConfigRepository.cs" />
+    <Compile Include="Repository\util\ExcelReader.cs" />
+    <Compile Include="Repository\WorkflowApproveHierarchyRepository.cs" />
+    <Compile Include="Repository\AccessTypesRepository.cs" />
+    <Compile Include="Repository\AxsBaseRepository.cs" />
+    <Compile Include="Repository\CommonValueSetsRepository.cs" />
+    <Compile Include="Repository\ModelException.cs" />
+    <Compile Include="Repository\EntityMappings.cs" />
+    <Compile Include="Repository\PeopleRepository.cs" />
+    <Compile Include="Repository\ResourceCategoriesRepository.cs" />
+    <Compile Include="Repository\WorkflowExecutionRepository.cs" />
+    <Compile Include="Repository\WorkflowRepository.cs" />
+    <Compile Include="Utils\ConstantsDM.cs" />
+    <Compile Include="Utils\LogManager.cs" />
+    <Compile Include="Utils\MimeTypeMap.cs" />
+    <Compile Include="Utils\NotificationMailer.cs" />
+    <Compile Include="Utils\RequestEmailData.cs" />
+    <Compile Include="Utils\RequestEmailDataStorage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GyMSecurity\GyM.Security.csproj">
+      <Project>{505c723b-53b8-401b-86af-6898f4fffd52}</Project>
+      <Name>GyM.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

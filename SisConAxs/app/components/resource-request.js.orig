@@ -1,0 +1,285 @@
+import { Entity } from '../core.js'
+import { ResourceBase } from './resource-base.js'
+import { AccessTypeValue } from './resource-accesstype.js'
+
+export class Request extends Entity {
+    static get VIEW_REQUEST_SEND() { return 'REQUEST_SEND'; }
+    static get VIEW_REQUEST_FORAPPROVE() { return 'REQUEST_FORAPPROVE'; }
+    static get VIEW_REQUEST_SEARCH() { return 'REQUEST_SEARCH'; }
+
+    static get TYPE_ALTA() { return 46; }
+    static get TYPE_BAJA() { return 47; }
+    static get TYPE_MODIFICACION() { return 48; }
+
+    static get PRIORITY_BAJA() { return 49; }
+    static get PRIORITY_NORMAL() { return 50; }
+    static get PRIORITY_ALTA() { return 51; }
+    static get PRIORITY_URGENTE() { return 52; }
+
+    static get STATUS_PENDIENTE() { return 40; }
+    static get STATUS_APROBADO() { return 43; }
+    static get STATUS_RECHAZADO() { return 44; }
+    static get STATUS_PARCIAL() { return 45; }
+    static get STATUS_ANULADO() { return 53; }
+    static get STATUS_EN_PROCESO() { return 55; }
+    static get STATUS_ATENDIDO() { return 64; }
+    static get STATUS_INDEFINIDO() { return 69; }
+    static get STATUS_EXPIRADO() { return 77; }
+
+    constructor() {
+        super();
+
+        this.RequestBy = "";
+        this.RequestByName = "";
+        this.RequestByProject = "";
+        this.RequestByDepartment = "";
+        this.RequestByPosition = "";
+
+        this.RequestTo = 0;
+        this.RequestToName = "";
+        this.RequestToCompany = 0;
+        this.RequestToCompanyName = "";
+        this.RequestToProject = "";
+        this.RequestToDepartment = "";
+        this.RequestToPosition = "";
+        this.RequestToEmail = "";
+
+        this.RequestCompletedDate = "";
+        this.RequestDate = new Date();
+        this.RequestDepartment = 0;
+        this.RequestDepartmentName = "";
+        this.RequestForApprove = 0;
+        this.RequestID = 0;
+        this.RequestNote = null;
+        this.RequestNroItems = 0;
+        this.RequestNumber = 0;
+        this.RequestPriority = Request.PRIORITY_NORMAL;
+        this.RequestPriorityName = "";
+        this.RequestStatus = 0;
+        this.RequestStatusName = "";
+
+        this.RequestType = Request.TYPE_ALTA;
+        this.RequestTypeDisplay = "";
+        this.RequestTypeName = "";
+        this.AccessRequestDetails = [];
+    }
+
+    __formatDate(date) {
+        return `${format(date.getDate())}/${format(date.getMonth() + 1)}/${date.getFullYear()}`;
+
+        function format(n) {
+            return n < 10 ? '0' + n : n;
+        }
+    }
+
+    get RequestCompletedDateDisplay() {
+        if (this.RequestCompletedDate == null) {
+            return null;
+        } else {
+            let date = new Date(this.RequestCompletedDate);
+            return this.__formatDate(date);
+        }
+    }
+    get RequestDateDisplay() {
+        if (this.RequestDate == null) {
+            return null;
+        } else {
+            let date = new Date(this.RequestDate);
+            return this.__formatDate(date);
+        }
+    }
+
+    fromDTO(dto) {
+        super.fromDTO(dto);
+        this.AccessRequestDetails = RequestDetail.fromList(this.AccessRequestDetails || []);
+    }
+
+    setRequestBy(people) {
+        this.RequestBy = people.UserID;
+        this.RequestByName = people.PeopleFullname;
+<<<<<<< HEAD
+        this.RequestByProject = people.PeopleAttribute2;
+        this.RequestByPosition = people.PeoplePositionName; // <-- (workflow cargo)   //  people.PeopleAttribute3;
+=======
+        this.RequestByProject = people.PeopleAttribute2 || '';
+        this.RequestByPosition = people.PeoplePositionName || ''; // <-- (workflow cargo)   //  people.PeopleAttribute3;
+>>>>>>> dev
+    }
+
+    setRequestTo(people) {
+        this.RequestTo = people.PeopleInternalID;
+        this.RequestToEmail = people.PeopleEmail;
+        this.RequestToName = people.PeopleFullname;
+        this.RequestToCompany = people.PeopleCompany;
+        this.RequestToCompanyName = people.PeopleCompanyName;
+<<<<<<< HEAD
+        this.RequestToProject = people.PeopleAttribute2;
+        this.RequestToDepartment = people.PeopleDepartmentName;
+        this.RequestToPosition = people.PeoplePositionName; // <-- (workflow cargo)   //  people.PeopleAttribute3;
+=======
+        this.RequestToProject = people.PeopleAttribute2 || '';
+        this.RequestToDepartment = people.PeopleDepartmentName || '';
+        this.RequestToPosition = people.PeoplePositionName || ''; // <-- (workflow cargo)   //  people.PeopleAttribute3;
+>>>>>>> dev
+    }
+}
+export class RequestDetail extends Entity {
+    static get REPONSE_ACCEPT() { return 1; }
+    static get REPONSE_REJECT() { return 0; }
+
+    constructor() {
+        super();
+        this.ReqDetTemporal = 0;
+        this.ReqDetValidityFrom = null;
+        this.ReqDetValidityUntil = null;
+        this.RequestDetAdditional = 0;
+        this.RequestDetAdditionalIntValue = 0;
+        this.RequestDetAdditionalStrValue = "";
+        this.RequestDetID = 0;
+        this.RequestDetIntValue = 0;
+        this.RequestDetPending = false;
+        this.RequestDetPrevData = false;
+        this.RequestDetStatus = 0;
+        this.RequestDetStatusName = "";
+        this.RequestDetStep = 0;
+        this.RequestDetStrValue = null;
+        this.RequestDetType = 0;
+        this.RequestDetTypeDisplay = "";
+        this.RequestDetTypeName = null;
+        this.RequestResponse = null;
+        this.RequestID = 0;
+        this.RequestDetDisplayValue = null;
+        this.ResourceAccessTypeType = 0;
+        this.ResourceAccessTypeValues = [];
+        this.ResourceActive = 0;
+        this.ResourceCategoryDisplay = "";
+        this.ResourceCategoryName = "";
+        this.ResourceFullName = "";
+        this.ResourceID = 0;
+        this.ResourceName = "";
+        this.ResourceOnlyAssignable = false;
+        this.ResourceParent = 0;
+        this.ResourceTemporal = 0;
+
+        this.RequestDetPending = false;
+        this.RequestDetPrevData = false;
+        this.ResourceOnlyAssignable = false;
+    }
+
+    get RequestDetValidityDisplay() {
+        if (this.ReqDetValidityFrom != null)
+            return moment(this.ReqDetValidityFrom).format('DD/MM/YYYY') + " - " + moment(this.ReqDetValidityUntil).format('DD/MM/YYYY');
+    }
+
+    fromDTO(dto) {
+        super.fromDTO(dto);
+        this.ResourceAccessTypeValues = AccessTypeValue.fromList(this.ResourceAccessTypeValues || []);
+    }
+}
+export class RequestResource extends ResourceBase {
+    get api() {
+        return '/api/AccessRequest';
+    }
+
+    getByID(requestID, params = undefined) {
+        return RequestResource.$get(`/api/AccessRequest/${requestID}`, params, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    requestBy(userID = 0) {
+        return RequestResource.$get(`/api/AccessRequest/RequestBy/${userID}`, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    generateDetailFromPeople(peopleID, requestType) {
+        const headers = {
+            'X-Auth-Token': this.constructor.session.sessionToken || {}
+        }
+
+        return new Promise(function(resolve, reject = () => {}) {
+            RequestResource.$get(`/api/AccessRequest/HaveAccess/?PeopleID=${peopleID}&RequestType=${requestType}`, undefined, {
+                    headers
+                }).then(r => {
+                    if (r == null) {
+                        // requestType
+                    } else if (r.CommonValueID == Request.TYPE_MODIFICACION) {
+                        requestType = r.CommonValueName;
+                    } else if (r.CommonValueID == Request.TYPE_ALTA) {
+                        requestType = r.CommonValueName;
+                    }
+                    RequestResource.$get(`/api/AccessRequest/Details/?PeopleID=${peopleID}&RequestType=${requestType}`, undefined, {
+                            headers
+                        }).then(data => {
+                            console
+                            resolve({
+                                requestType,
+                                data
+                            });
+                        })
+                        .catch(e => reject(e));
+                })
+                .catch(e => reject(e));
+        })
+    }
+
+    approve(data) {
+        return RequestResource.$post(`/api/AccessRequest/Approve`, data, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    annul(id) {
+        return RequestResource.$post(`/api/AccessRequest/cancel/${id}`, {}, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    massiveDeactivation(data) {
+        return RequestResource.$post(`/api/AccessRequest/MassiveDeactivateAccess/`, data, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    massiveDeactivationLoadExcel(formData) {
+        return RequestResource.$post(`/api/AccessRequest/MassiveDeactivateAccess/loadFromExcel/`, formData, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+    massiveDeactivationExcel() {
+        return RequestResource.$post(`/api/AccessRequest/MassiveDeactivateAccess/deleteFromExcel/`, {}, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    getDetailHistory(id) {
+        return RequestResource.$get(`/api/AccessRequest/Details/${id}/History`, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+
+    getRequestPendings(user) {
+        return RequestResource.$get(`/api/accessrequest/pendings/${user}`, undefined, {
+            headers: {
+                'X-Auth-Token': this.constructor.session.sessionToken || {}
+            }
+        });
+    }
+}

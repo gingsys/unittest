@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectdatabase version="6">
+  <linkdatabase>
+    <link topicid="Acción Acción" displaystring="Acción Acción">
+      <target id="html">../web/Acción_Acción.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Acción_Acción.html</target>
+      <target id="pdf">pdf://25@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="ACCIÓN CONSULTA" displaystring="Acción Consulta">
+      <target id="html">../web/ACCIÓN_CONSULTA.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/ACCIÓN_CONSULTA.html</target>
+      <target id="pdf">pdf://24@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Acción Notificación" displaystring="Acción Notificación">
+      <target id="html">../web/Acción_Notificación.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Acción_Notificación.html</target>
+      <target id="pdf">pdf://23@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Categorías" displaystring="Categorías">
+      <target id="html">../web/Categorías.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Categorías.html</target>
+      <target id="pdf">pdf://29@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Configuración de notificaciones" displaystring="Configuración de notificaciones">
+      <target id="html">../web/Configuración_de_notificaciones.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Configuración_de_notificaciones.html</target>
+      <target id="pdf">pdf://39@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Consultar Solicitudes" displaystring="Consultar Solicitudes">
+      <target id="html">../web/Consultar_Solicitudes.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Consultar_Solicitudes.html</target>
+      <target id="pdf">pdf://10@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Descripcion del sistema" displaystring="Descripcion del sistema">
+      <target id="html">../web/Descripcion_del_sistema.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Descripcion_del_sistema.html</target>
+      <target id="pdf">pdf://3@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Eliminar Tipo de Acceso" displaystring="Eliminar Tipo de Acceso">
+      <target id="html">../web/Eliminar_Tipo_de_Acceso.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Eliminar_Tipo_de_Acceso.html</target>
+      <target id="pdf">pdf://20@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Eliminar Valor" displaystring="Eliminar Valor">
+      <target id="html">../web/Eliminar_Valor.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Eliminar_Valor.html</target>
+      <target id="pdf">pdf://15@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="inicio" displaystring="Introducción">
+      <target id="html">../web/inicio.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/inicio.html</target>
+      <target id="pdf">pdf://2@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Ítems" displaystring="Ítems">
+      <target id="html">../web/Ítems.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Ítems.html</target>
+      <target id="pdf">pdf://22@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Items de Jerarquia" displaystring="Items de Jerarquia">
+      <target id="html">../web/Items_de_Jerarquia.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Items_de_Jerarquia.html</target>
+      <target id="pdf">pdf://40@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Jerarquía de Aprobación" displaystring="Jerarquía de Aprobación">
+      <target id="html">../web/Jerarquía_de_Aprobación.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Jerarquía_de_Aprobación.html</target>
+      <target id="pdf">pdf://27@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Menu Configuración" displaystring="Menu Configuración">
+      <target id="html">../web/Menu_Configuración.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Menu_Configuración.html</target>
+      <target id="pdf">pdf://11@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Menu Reportes" displaystring="Menu Reportes">
+      <target id="html">../web/Menu_Reportes.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Menu_Reportes.html</target>
+      <target id="pdf">pdf://46@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Menu Solicitudes" displaystring="Menu Solicitudes">
+      <target id="html">../web/Menu_Solicitudes.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Menu_Solicitudes.html</target>
+      <target id="pdf">pdf://5@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Mis Solicitudes Emitidas" displaystring="Mis Solicitudes Emitidas">
+      <target id="html">../web/Mis_Solicitudes_Emitidas.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Mis_Solicitudes_Emitidas.html</target>
+      <target id="pdf">pdf://6@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Mis Solicitudes Por Autorizar" displaystring="Mis Solicitudes Por Autorizar">
+      <target id="html">../web/Mis_Solicitudes_Por_Autorizar.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Mis_Solicitudes_Por_Autorizar.html</target>
+      <target id="pdf">pdf://9@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar   o Eliminar    Ítems de jerarquia." displaystring="Modificar   o Eliminar    Ítems de jerarquia.">
+      <target id="html">../web/Modificar___o_Eliminar____Ítems_de_jerarquia_.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar___o_Eliminar____Ítems_de_jerarquia_.html</target>
+      <target id="pdf">pdf://42@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar   o Eliminar   Categoría" displaystring="Modificar   o Eliminar   Categoría">
+      <target id="html">../web/Modificar___o_Eliminar___Categoría.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar___o_Eliminar___Categoría.html</target>
+      <target id="pdf">pdf://31@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar   o Eliminar   Persona." displaystring="Modificar   o Eliminar   Persona.">
+      <target id="html">../web/Modificar___o_Eliminar___Persona_.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar___o_Eliminar___Persona_.html</target>
+      <target id="pdf">pdf://35@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar   o Eliminar   Recuso." displaystring="Modificar   o Eliminar   Recuso.">
+      <target id="html">../web/Modificar___o_Eliminar___Recuso_.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar___o_Eliminar___Recuso_.html</target>
+      <target id="pdf">pdf://33@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar   o Eliminar   Usuario." displaystring="Modificar   o Eliminar   Usuario.">
+      <target id="html">../web/Modificar___o_Eliminar___Usuario_.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar___o_Eliminar___Usuario_.html</target>
+      <target id="pdf">pdf://38@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar   o Eliminar   Workflow." displaystring="Modificar   o Eliminar   Workflow.">
+      <target id="html">../web/Modificar___o_Eliminar___Workflow_.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar___o_Eliminar___Workflow_.html</target>
+      <target id="pdf">pdf://28@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar o eliminar Jerarquia de aprobación" displaystring="Modificar o eliminar Jerarquia de aprobación">
+      <target id="html">../web/Modificar_o_eliminar_Jerarquia_de_aprobación.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar_o_eliminar_Jerarquia_de_aprobación.html</target>
+      <target id="pdf">pdf://45@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar Tipo de Acceso" displaystring="Modificar Tipo de Acceso">
+      <target id="html">../web/Modificar_Tipo_de_Acceso.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar_Tipo_de_Acceso.html</target>
+      <target id="pdf">pdf://19@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Modificar Valor" displaystring="Modificar Valor">
+      <target id="html">../web/Modificar_Valor.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Modificar_Valor.html</target>
+      <target id="pdf">pdf://14@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nueva Categoría" displaystring="Nueva Categoría">
+      <target id="html">../web/Nueva_Categoría.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nueva_Categoría.html</target>
+      <target id="pdf">pdf://30@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nueva Jerarquía de Aprobación" displaystring="Nueva Jerarquía de Aprobación">
+      <target id="html">../web/Nueva_Jerarquía_de_Aprobación.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nueva_Jerarquía_de_Aprobación.html</target>
+      <target id="pdf">pdf://44@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nueva Persona ." displaystring="Nueva Persona .">
+      <target id="html">../web/Nueva_Persona__.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nueva_Persona__.html</target>
+      <target id="pdf">pdf://34@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nueva Solicitud" displaystring="Nueva Solicitud">
+      <target id="html">../web/Nueva_Solicitud.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nueva_Solicitud.html</target>
+      <target id="pdf">pdf://7@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nuevo Item de Jerarquía" displaystring="Nuevo Item de Jerarquía">
+      <target id="html">../web/Nuevo_Item_de_Jerarquía.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nuevo_Item_de_Jerarquía.html</target>
+      <target id="pdf">pdf://41@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nuevo Recurso" displaystring="Nuevo Recurso">
+      <target id="html">../web/Nuevo_Recurso.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nuevo_Recurso.html</target>
+      <target id="pdf">pdf://32@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nuevo Tipo de Acceso" displaystring="Nuevo Tipo de Acceso">
+      <target id="html">../web/Nuevo_Tipo_de_Acceso.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nuevo_Tipo_de_Acceso.html</target>
+      <target id="pdf">pdf://18@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nuevo Usuario" displaystring="Nuevo Usuario">
+      <target id="html">../web/Nuevo_Usuario.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nuevo_Usuario.html</target>
+      <target id="pdf">pdf://37@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nuevo Valor" displaystring="Nuevo Valor">
+      <target id="html">../web/Nuevo_Valor.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nuevo_Valor.html</target>
+      <target id="pdf">pdf://13@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Nuevo Workflow" displaystring="Nuevo Workflow">
+      <target id="html">../web/Nuevo_Workflow.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Nuevo_Workflow.html</target>
+      <target id="pdf">pdf://26@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Personas" displaystring="Personas">
+      <target id="html">../web/Personas.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Personas.html</target>
+      <target id="pdf">pdf://8@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Primer Ingrerso" displaystring="Primer Ingreso">
+      <target id="html">../web/Primer_Ingrerso.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Primer_Ingrerso.html</target>
+      <target id="pdf">pdf://4@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Prioridad de ejecución." displaystring="Prioridad de ejecución.">
+      <target id="html">../web/Prioridad_de_ejecución_.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Prioridad_de_ejecución_.html</target>
+      <target id="pdf">pdf://43@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Recursos" displaystring="Recursos">
+      <target id="html">../web/Recursos.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Recursos.html</target>
+      <target id="pdf">pdf://17@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Reporte de Accesos del Personal" displaystring="Reporte de Accesos del Personal">
+      <target id="html">../web/Reporte_de_Accesos_del_Personal.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Reporte_de_Accesos_del_Personal.html</target>
+      <target id="pdf">pdf://47@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Reporte de General de Solicitudes" displaystring="Reporte de General de Solicitudes">
+      <target id="html">../web/Reporte_de_General_de_Solicitudes.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Reporte_de_General_de_Solicitudes.html</target>
+      <target id="pdf">pdf://48@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Sisconaxs" displaystring="Manual de Usuario">
+      <target id="html">../web/Sisconaxs.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Sisconaxs.html</target>
+      <target id="pdf">pdf://1@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Tipos de Acceso" displaystring="Tipos de Acceso">
+      <target id="html">../web/Tipos_de_Acceso.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Tipos_de_Acceso.html</target>
+      <target id="pdf">pdf://16@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Usuarios" displaystring="Usuarios">
+      <target id="html">../web/Usuarios.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Usuarios.html</target>
+      <target id="pdf">pdf://36@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Valores Comunes" displaystring="Valores Comunes">
+      <target id="html">../web/Valores_Comunes.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Valores_Comunes.html</target>
+      <target id="pdf">pdf://12@SISCONAXS_MU.pdf</target>
+    </link>
+    <link topicid="Workflows" displaystring="Workflows">
+      <target id="html">../web/Workflows.html</target>
+      <target id="htmlhelp">mk:@MSITStore:SISCONAXS_MU.chm::/Workflows.html</target>
+      <target id="pdf">pdf://21@SISCONAXS_MU.pdf</target>
+    </link>
+  </linkdatabase>
+  <classinformation></classinformation>
+</projectdatabase>

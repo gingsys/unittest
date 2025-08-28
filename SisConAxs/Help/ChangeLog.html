@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Change Log</title>
+</head>
+<body>
+    <h1> Change Log</h1>
+    <div> Proyecto: Sistema de Control de Acceso.</div>
+    <div> CONCAR</div>
+    <hr />
+    <h1>v. 0.0.16 - 05/03/2015</h1>
+    <ul>
+        <li>Se corrigió la forma como se graba los Workflows.</li>
+        <li>Se modificó la carga de Recursos, ahora se usa un Stored Procedure para hacerlo más rápido.</li>
+        <li>Se agregaron validacions del lado Cliente.</li>
+        <li>Se agregaron validacines del lado Servidor.</li>
+        <li>En Solicitud nueva ahora se muestra los recursos colapsados por defecto.</li>
+    </ul>
+    <h1>v. 0.0.14 - 26/02/2015</h1>
+    <ul>
+        <li>En Personas ahora se puede grabar SIN Area NI Cargo (No todas las personas trabajan en Concar ni tienen cargo).</li>
+        <li>En Personas ahora se muestra un mensaje adecuado si ya existe otra Persona con el mismo Tipo de Documento y Número de Documento..</li>
+        <li>En Personas ahora se muestra un mensaje adecuado si ya existe otra Persona con el mismo Número de ID interno.</li>
+        <li>En Persona Nueva ahora aparece por defecto Tipo de Documento = DNI.</li>
+        <li>Los Recursos ahora pueden tener un Area/Proyecto Asociado. Si se define un Area/Proyecto entonces el recurso solo aparecerá para las Personas que estén en dicha Area/Proyecto.</li>
+        <li>En Recursos ahora al seleccionar un Recurso Padre se hereda automáticamente la Categoría, el Tipo de Acceso y el Workflow.</li>
+        <li>En Solicitud se mejoró el layout de los subcontroles por recurso.</li>
+        <li>En Solicitud Nueva ahora aparece por defecto Prioridad = Normal.</li>
+        <li>En Solicitud Nueva se mejoró el tiempo que toma crear el árbol de Recursos.</li>
+        <li>En el editor de Workflow ahora se muestra una lista desplegable con el título "Solicitud", esta lista contiene los valores reemplazables de la solicitud.</li>
+        <li>Se modificó el ancho del Editor de Workflow.</li>
+        <li>Se agregó la columna de COMMON_VALUES_DEFAULT para definir una valor por defecto por CommonValueSet.</li>
+        <li>Se agregó un metodo GET a la Controladora de CommonValueSet para obtener el valor por defecto.</li>
+    </ul>
+    <h1>v. 0.0.5 - 05/02/2015</h1>
+    <ul>
+        <li>Se agregó el editor de texto para las Notificaciones de Workflow.</li>
+        <li>Se agregaron Areas y Cargos a valores Communes.</li>
+        <li>Se completo la grabación de Items de Workflow.</li>
+        <li>Se creó el servicio NotificationMailer para el envío de correos.</li>
+        <li>Se creó el servicio TaskManager para la ejecución de workflows y manejo de Timeouts.</li>
+        <li>Se agregó Jerarquía de Aprobación (BD, Controller y Cliente).</li>
+        <li>Se agregó System_Values (BD, Controller).</li>
+        <li>Se agregó Configuración de Notificaciones, que usa System_Values (Controller y Cliente).</li>
+        <li>Se agregaron las ventnas de búsqueda para Personas, Valores Comunes, Jerarquias de Aprobación, Workflow.</li>
+        <li>Se agregó la grabación de Cabecera de Solicituddes.</li>
+    </ul>
+    <h1>v. 0.0.4 - 23/01/2015</h1>
+    <ul>
+        <li>Se modificó el layout de la Aplicación para usar los estándares de Concar.</li>
+        <li>Se modificó la implementación de la definición de states(routes) para reflejar la estructura jerarquica del menú.</li>
+        <li>Se modificó la implementación del menú para hacer uso de rutas anidadas.</li>
+        <li>Modificación en el CSS para manejo de las ventanas de edición, cambiando de tablas a div.</li>
+        <li>Se crearon las rutas y ventana de Solicitud, la misma ventana deberá usarse para las 3 opciones: Mis Solicitudes Emitidas, 
+            Mis Solicitudes por Aprobar y Consulta de Solicitudes.</li>
+        <li>Se cambió el componente de grilla a ngGrid.</li>
+    </ul>
+    <h1>v. 0.0.3 - 21/01/2015</h1>
+    <ul>
+        <li>Implementado la Creación/Edición de Tipos de Acceso, sólo cabecera, falta el detalle (lista de valores).</li>
+        <li>Implementada la edición/creación de Categorías.</li>
+        <li>Implementada la edición/creación de Valores Comunes, sólo cabecera, falta el detalle (lista de valores).</li>
+        <li>Implementada la edición/creación de Workflows, sólo cabecera, falta el detalle (lista de items).</li>
+        <li>Implementada la ventana de Búsqueda de Tipos de Acceso</li>
+        <li>Implementada la ventana de Búsqueda de Categorías</li>
+    </ul>
+    <h1>v. 0.0.2 - 20/01/2015</h1>
+    <ul>
+        <li>Implementado en la Controladora (Servidor) las acciones de PUT y POST de AccessTypes y ResourceCategories.</li>
+        <li>Implementada la edición/creación de Categorías.</li>
+        <li>Implementado los eventos de la grilla de datos (external-scope).</li>
+        <li>Se implementó la clase AxsBaseRepository para centralizar ciertas operaciones de interfaz con las entidades.</li>
+    </ul>
+    <h1>v. 0.0.1 - 19/01/2015</h1>
+    <ul>
+        <li>Pimera versión subida al host.</li>
+        <li>Base de datos subida al host.</li>
+        <li>Entidades de EF creadas para las tablas maestras (Tipos de Accesos, Categorias, Valores Comunes, Recursos, Workflows).</li>
+        <li>Primera versión de arquitectura front end implementada, incluyendo Angular JS, routing.</li>
+        <li>Layout de contenido y toolbar probado.</li>
+    </ul>
+
+</body>
+</html>
